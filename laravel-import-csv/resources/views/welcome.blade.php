@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Laravel API Client</title>
+    <title>Coba CORS</title>
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
     <style>
@@ -16,6 +16,9 @@
         <div class="max-w-xl w-full mx-auto p-6 lg:p-8">
 
             <div id="auth-section" class="scale-100 p-6 bg-white dark:bg-gray-800/50 rounded-lg shadow-2xl">
+                <div>
+                    <h2 class="text-xl font-semibold text-gray-900 dark:text-white">{{ request()->url() }}</h2>
+                </div>
                 <div class="flex border-b border-gray-200 dark:border-gray-700">
                     <button id="show-login-btn" class="tab-button active">Login</button>
                     <button id="show-register-btn" class="tab-button">Register</button>
@@ -67,7 +70,7 @@
 
             <div id="status-message" class="mt-6 text-center text-sm text-gray-500 dark:text-gray-400"></div>
 
-            <pre id="api-result" class="mt-6 p-4 bg-gray-900 text-white rounded-lg text-sm" style="display: none;"></pre>
+            <pre id="api-result" class="mt-6 p-4 bg-gray-900 text-white rounded-lg text-sm" style="display: none; color: white;"></pre>
 
         </div>
     </div>
